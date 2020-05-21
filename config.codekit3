@@ -19,6 +19,134 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/footer/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/footer/facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/footer/instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/footer/instagram.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/footer/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/footer/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/footer/youtube.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/footer/youtube.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/section-1/MARVEL.jpg": {
+		"ft": 16384,
+		"iS": 685523,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/MARVEL.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-2/baby-groot.jpg": {
+		"ft": 16384,
+		"iS": 135972,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/baby-groot.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-3/comic-man.jpg": {
+		"ft": 16384,
+		"iS": 261188,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/comic-man.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/groot_man.jpg": {
+		"ft": 16384,
+		"iS": 234551,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/groot_man.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/comic.jpg": {
+		"ft": 16384,
+		"iS": 142351,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/comic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/spiderman.jpg": {
+		"ft": 16384,
+		"iS": 97124,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/spiderman.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-5/steps.jpg": {
+		"ft": 16384,
+		"iS": 161670,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-5/steps.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-6/poster.jpg": {
+		"ft": 16384,
+		"iS": 174045,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-6/poster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -37,6 +165,22 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/footer.html",
+		"oF": 0
+		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/header.html",
+		"oF": 0
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -282,6 +426,22 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-4.html",
+		"oF": 0
+		},
+	"/dev/section-5.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-5.html",
+		"oF": 0
+		},
+	"/dev/section-6.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-6.html",
 		"oF": 0
 		},
 	"/README.md": {
