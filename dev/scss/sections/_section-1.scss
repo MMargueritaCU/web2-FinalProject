@@ -6,7 +6,9 @@
     padding-bottom: 106px;
 
     @include xl{
+        display: grid;
         grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-1 .";
     }
 
     .grid-content{
@@ -14,6 +16,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        grid-area: section-1;
         height: 362px;
 
         @include md{
