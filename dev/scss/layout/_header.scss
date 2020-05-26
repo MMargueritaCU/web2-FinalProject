@@ -1,3 +1,76 @@
 /* =============
     Header
 ============= */
+
+#header{
+    background-color: $black;
+
+    div{
+        #top{
+            display: none;
+            padding: 20px;
+
+            @include lg{
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            h5{
+                color: $brown;
+                padding-right: 30px;
+            }
+
+            a{
+                background-color: $white;
+                border-radius: 40px;
+                padding: 10px 40px;
+                
+                p{
+                    color: $black;
+                    text-align: center;
+                }
+            }
+        }
+
+        #burger-container{
+            display: flex;
+            justify-content: space-between;
+
+            @include lg{
+                display: none;
+            }
+
+            i{
+                color: $brown;
+            }
+
+            h1{
+                color: $brown;
+            }
+        }
+
+        #nav-container{
+            display: none;
+
+            @include lg{
+                display: flex;
+            }
+
+            h1{
+                color: $brown;
+            }
+
+            ul{
+                display: flex;
+
+                li{
+                    padding: 0 30px;
+
+                    a{
+                        color: $brown;
+                    }
+                }
+            }
+        }
+    }
+}

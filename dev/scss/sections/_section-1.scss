@@ -2,5 +2,47 @@
     Section 1
 ============= */
 #section-1{
+    background-color: $black;
+    padding-bottom: 106px;
 
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    .grid-content{
+        background-image: url('../img/section-1/MARVEL.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 362px;
+
+        @include md{
+            height: 444px;
+        }
+
+        @include lg{
+            height: 650px;
+        }
+
+        @include xl{
+            height: 833px;
+        }
+
+        #link{
+            padding-top: 300px;
+            padding-bottom: 60px;
+            text-align: center;
+
+            a{
+                background-color: $black;
+                color: $white;
+                padding: 20px;
+            }
+        }
+
+        #heading{
+            color: $brown;
+            text-align: center;
+        }
+    }
 }
