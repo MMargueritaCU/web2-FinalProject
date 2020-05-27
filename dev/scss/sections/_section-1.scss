@@ -3,7 +3,6 @@
 ============= */
 #section-1{
     background-color: $black;
-    padding-bottom: 106px;
 
     @include xl{
         display: grid;
@@ -31,9 +30,8 @@
             height: 833px;
         }
 
-        #link{
+        >div{
             padding-top: 300px;
-            padding-bottom: 60px;
             text-align: center;
 
             a{
@@ -41,11 +39,6 @@
                 color: $white;
                 padding: 20px;
             }
-        }
-
-        #heading{
-            color: $brown;
-            text-align: center;
         }
     }
 }

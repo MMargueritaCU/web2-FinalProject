@@ -349,6 +349,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_section-1-heading.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-1-heading.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/sections/_section-1.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -439,6 +452,14 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"/dev/section-1-heading.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-1-heading.html",
+		"oF": 0
 		},
 	"/dev/section-1.kit": {
 		"cB": 0,
