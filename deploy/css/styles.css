@@ -459,15 +459,71 @@ textarea {
 #section-1-heading {
   background-color: #000;
   color: #A58D85;
-  padding: 10px;
+  padding: 32px 10px;
   text-align: center; }
 
 /* =============
     Section 2
 ============= */
+#section-2 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-2 .";
+  padding-bottom: 60px; }
+  #section-2 div {
+    grid-area: section-2; }
+    #section-2 div article h2 {
+      font-size: 1.5625rem;
+      line-height: 1.875rem;
+      padding: 50px 20px;
+      text-align: center; }
+    #section-2 div article p {
+      font-size: 0.9375rem;
+      line-height: 1.25rem;
+      padding: 0 10px 70px 10px;
+      text-align: justify; }
+    #section-2 div aside {
+      background-image: url("../img/section-2/baby-groot.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 400px; }
+
 /* =============
     Section 3
 ============= */
+#section-3 {
+  background-color: #A58D85;
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-3 ."; }
+  #section-3 div {
+    grid-area: section-3;
+    padding: 80px 0; }
+    #section-3 div article {
+      text-align: center; }
+      #section-3 div article h3 {
+        color: #fff;
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+        padding-bottom: 50px; }
+      #section-3 div article p {
+        color: #fff;
+        font-size: 0.9375rem;
+        line-height: 1.1875rem;
+        padding-bottom: 64px; }
+      #section-3 div article a {
+        background-color: #000;
+        color: #fff;
+        padding: 10px; }
+    #section-3 div aside {
+      background-image: url("../img/section-3/comic-man.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+      margin-top: 60px; }
+
 /* =============
     Section 4
 ============= */

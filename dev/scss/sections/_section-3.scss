@@ -2,8 +2,46 @@
     Section 3
 ============= */
 #section-3{
-    .grid-content{
-        
-    }
+    background-color: $brown;
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". section-3 .";
 
+    div{
+        grid-area: section-3;
+        padding: 80px 0;
+
+        article{
+            text-align: center;
+
+            h3{
+                color: $white;
+                font-size: rem-calc(25);
+                line-height: rem-calc(30);
+                padding-bottom: 50px;
+            }
+
+            p{
+                color: $white;
+                font-size: rem-calc(15);
+                line-height: rem-calc(19);
+                padding-bottom: 64px;
+            }
+
+            a{
+                background-color: $black;
+                color: $white;
+                padding: 10px;
+            }
+       }
+
+       aside{
+           background-image: url('../img/section-3/comic-man.jpg');
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           height: 200px;
+           margin-top: 60px;
+       }
+    }
 }
