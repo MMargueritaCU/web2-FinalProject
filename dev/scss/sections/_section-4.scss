@@ -2,7 +2,62 @@
     Section 4
 ============= */
 #section-4{
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". section-4 .";
+
     div{
-        
+        grid-area: section-4;
+
+        #top-part{
+            padding: 0 10px;
+
+            h2{
+                border-left: 4px solid $grey;
+                font-size: rem-calc(25);
+                line-height: rem-calc(30);
+                padding: 30px 0;
+                text-align: center;
+            }
+    
+            p{
+                font-size: rem-calc(15);
+                line-height: rem-calc(19);
+                padding-top: 34px;
+                padding-bottom: 50px;
+                text-align: justify;
+            }
+        }
+
+        aside{
+            background-image: url('../img/section-4/groot_man.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+        }
+
+        #bottom-part{
+            padding: 0 10px;
+
+            p{
+                font-size: rem-calc(15);
+                line-height: rem-calc(19);
+                padding-top: 50px;
+                text-align: justify;
+            }
+
+            >section{
+                border-right: 4px solid $grey;
+                padding: 100px 0;
+                text-align: center;
+
+                a{
+                    background-color: $black;
+                    color: $white;
+                    padding: 10px;
+                }
+            }
+        }
     }
 }

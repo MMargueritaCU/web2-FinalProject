@@ -394,14 +394,19 @@ textarea {
         text-align: center; }
   #header div #burger-container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-bottom: 20px; }
     @media (min-width: 992px) {
       #header div #burger-container {
         display: none; } }
     #header div #burger-container i {
-      color: #A58D85; }
+      color: #A58D85;
+      font-size: 30px;
+      padding: 20px; }
     #header div #burger-container h1 {
-      color: #A58D85; }
+      color: #A58D85;
+      font-size: 1.5rem;
+      padding: 20px; }
   #header div #nav-container {
     display: none; }
     @media (min-width: 992px) {
@@ -419,6 +424,20 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #000; }
+  #footer div #mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 61px; }
+  #footer div #larger {
+    display: none; }
+    @media (min-width: 768px) {
+      #footer div #larger {
+        display: flex; } }
+    #footer div #larger li h5 {
+      color: #A58D85; }
+
 /* =============
     Section 1
 ============= */
@@ -527,9 +546,152 @@ textarea {
 /* =============
     Section 4
 ============= */
+#section-4 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-4 ."; }
+  #section-4 div {
+    grid-area: section-4; }
+    #section-4 div #top-part {
+      padding: 0 10px; }
+      #section-4 div #top-part h2 {
+        border-left: 4px solid #777B7C;
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+        padding: 30px 0;
+        text-align: center; }
+      #section-4 div #top-part p {
+        font-size: 0.9375rem;
+        line-height: 1.1875rem;
+        padding-top: 34px;
+        padding-bottom: 50px;
+        text-align: justify; }
+    #section-4 div aside {
+      background-image: url("../img/section-4/groot_man.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px; }
+    #section-4 div #bottom-part {
+      padding: 0 10px; }
+      #section-4 div #bottom-part p {
+        font-size: 0.9375rem;
+        line-height: 1.1875rem;
+        padding-top: 50px;
+        text-align: justify; }
+      #section-4 div #bottom-part > section {
+        border-right: 4px solid #777B7C;
+        padding: 100px 0;
+        text-align: center; }
+        #section-4 div #bottom-part > section a {
+          background-color: #000;
+          color: #fff;
+          padding: 10px; }
+
 /* =============
     Section 5
 ============= */
+#section-5 {
+  background-color: #A58D85;
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-5 ."; }
+  #section-5 div {
+    grid-area: section-5; }
+    #section-5 div ul #part-1 {
+      color: #fff;
+      padding-top: 63px; }
+      #section-5 div ul #part-1 h3 {
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+        padding-bottom: 30px;
+        text-align: center; }
+      #section-5 div ul #part-1 p {
+        font-size: 0.9375rem;
+        line-height: 1.1875rem;
+        padding-bottom: 50px;
+        text-align: justify; }
+      #section-5 div ul #part-1 aside {
+        background-image: url("../img/section-5/spiderman.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px; }
+    #section-5 div ul #part-2 {
+      color: #fff;
+      padding-top: 63px; }
+      #section-5 div ul #part-2 h3 {
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+        padding-bottom: 30px;
+        text-align: center; }
+      #section-5 div ul #part-2 p {
+        font-size: 0.9375rem;
+        line-height: 1.1875rem;
+        padding-bottom: 50px;
+        text-align: justify; }
+      #section-5 div ul #part-2 aside {
+        background-image: url("../img/section-5/steps.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px; }
+    #section-5 div ul #part-3 {
+      color: #fff;
+      padding-top: 63px; }
+      #section-5 div ul #part-3 h3 {
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+        padding-bottom: 30px;
+        text-align: center; }
+      #section-5 div ul #part-3 p {
+        font-size: 0.9375rem;
+        line-height: 1.875rem;
+        text-align: center; }
+      #section-5 div ul #part-3 aside {
+        background-image: url("../img/section-5/comic.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        margin-top: 50px; }
+    #section-5 div section {
+      padding: 53px 0;
+      text-align: center; }
+      #section-5 div section > a {
+        background-color: #000;
+        color: #fff;
+        padding: 10px; }
+      #section-5 div section > p {
+        color: #fff;
+        padding-top: 30px; }
+        #section-5 div section > p span a {
+          color: #fff; }
+
 /* =============
     Section 6
 ============= */
+#section-6 {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-6 ."; }
+  #section-6 div {
+    grid-area: section-6; }
+    #section-6 div h2 {
+      font-size: 1.5625rem;
+      line-height: 1.875rem;
+      padding: 45px 0;
+      text-align: center; }
+    #section-6 div section {
+      background-image: url("../img/section-6/poster.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 300px; }
+    #section-6 div article {
+      padding: 50px 0;
+      text-align: center; }
+      #section-6 div article a {
+        background-color: #000;
+        color: #fff;
+        padding: 10px; }

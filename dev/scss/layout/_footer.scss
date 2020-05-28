@@ -1,3 +1,28 @@
 /* =============
     Footer
 ============= */
+
+#footer{
+    background-color: $black;
+
+    div{
+        #mobile{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 61px;
+        }
+        
+        #larger{
+            display: none;
+
+            @include md{
+                display: flex;
+            }
+            li{
+                h5{
+                    color: $brown;
+                }
+            }
+        }
+    }
+}
