@@ -20,6 +20,10 @@
                     line-height: rem-calc(30);
                     padding-bottom: 30px;
                     text-align: center;
+
+                    @include md{
+                        font-size: rem-calc(45);
+                    }
                 }
 
                 p{
@@ -27,6 +31,12 @@
                     line-height: rem-calc(19);
                     padding-bottom: 50px;
                     text-align: justify;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                        line-height: rem-calc(30);
+                        padding: 20px 100px 100px 100px;
+                    }
                 }
 
                 aside{
@@ -47,6 +57,10 @@
                     line-height: rem-calc(30);
                     padding-bottom: 30px;
                     text-align: center;
+
+                    @include md{
+                        font-size: rem-calc(45);
+                    }
                 }
 
                 p{
@@ -54,6 +68,12 @@
                     line-height: rem-calc(19);
                     padding-bottom: 50px;
                     text-align: justify;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                        line-height: rem-calc(30);
+                        padding: 20px 100px 100px 100px;
+                    }
                 }
 
                 aside{
@@ -74,12 +94,22 @@
                     line-height: rem-calc(30);
                     padding-bottom: 30px;
                     text-align: center;
+
+                    @include md{
+                        font-size: rem-calc(45);
+                    }
                 }
 
                 p{
                     font-size: rem-calc(15);
                     line-height: rem-calc(30);
                     text-align: center;
+
+                    @include md{
+                        font-size: rem-calc(20);
+                        line-height: rem-calc(30);
+                        padding-top: 20px;
+                    }
                 }
 
                 aside{
@@ -94,18 +124,33 @@
         }
 
         section{
-            padding: 53px 0;
+            padding: 53px;
             text-align: center;
+
+            @include md{
+                padding: 80px;
+            }
 
             >a{
                 background-color: $black;
                 color: $white;
-                padding: 10px;
+                font-weight: 700;
+                padding: 10px 20px;
+
+                @include md{
+                    font-size: rem-calc(30);
+                    padding: 20px 50px;
+                }
             }
 
             >p{
                 color: $white;
                 padding-top: 30px;
+
+                @include md{
+                    font-size: rem-calc(20);
+                    padding-top: 40px;
+                }
 
                 span{
                     a{

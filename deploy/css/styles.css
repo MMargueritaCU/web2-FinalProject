@@ -526,18 +526,29 @@ textarea {
       line-height: 1.875rem;
       padding: 50px 20px;
       text-align: center; }
+      @media (min-width: 768px) {
+        #section-2 div article h2 {
+          font-size: 2.8125rem;
+          line-height: 3.4375rem; } }
     #section-2 div article p {
       font-size: 0.9375rem;
       line-height: 1.25rem;
       padding: 0 10px 70px 10px;
       text-align: justify; }
+      @media (min-width: 768px) {
+        #section-2 div article p {
+          font-size: 1.25rem;
+          line-height: 1.875rem;
+          padding: 0 100px 50px 100px; } }
     #section-2 div aside {
       background-image: url("../img/section-2/baby-groot.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height: 400px; }
-
+      @media (min-width: 768px) {
+        #section-2 div aside {
+          height: 600px; } }
 /* =============
     Section 3
 ============= */
@@ -549,6 +560,9 @@ textarea {
   #section-3 div {
     grid-area: section-3;
     padding: 80px 0; }
+    @media (min-width: 768px) {
+      #section-3 div {
+        padding: 120px 0; } }
     #section-3 div article {
       text-align: center; }
       #section-3 div article h3 {
@@ -556,23 +570,43 @@ textarea {
         font-size: 1.5625rem;
         line-height: 1.875rem;
         padding-bottom: 50px; }
+        @media (min-width: 768px) {
+          #section-3 div article h3 {
+            font-size: 2.8125rem;
+            line-height: 3.4375rem;
+            padding-bottom: 100px; } }
       #section-3 div article p {
         color: #fff;
         font-size: 0.9375rem;
+        font-weight: 300;
         line-height: 1.1875rem;
         padding-bottom: 64px; }
+        @media (min-width: 768px) {
+          #section-3 div article p {
+            font-size: 1.5625rem;
+            line-height: 1.875rem;
+            padding-bottom: 100px; } }
       #section-3 div article a {
         background-color: #000;
         color: #fff;
-        padding: 10px; }
+        font-weight: 700;
+        padding: 10px 20px; }
+        @media (min-width: 768px) {
+          #section-3 div article a {
+            font-size: 1.5625rem;
+            line-height: 1.875rem;
+            padding: 20px 40px; } }
     #section-3 div aside {
       background-image: url("../img/section-3/comic-man.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 200px;
+      height: 300px;
       margin-top: 60px; }
-
+      @media (min-width: 768px) {
+        #section-3 div aside {
+          height: 400px;
+          margin-top: 100px; } }
 /* =============
     Section 4
 ============= */
@@ -590,18 +624,31 @@ textarea {
         line-height: 1.875rem;
         padding: 30px 0;
         text-align: center; }
+        @media (min-width: 768px) {
+          #section-4 div #top-part h2 {
+            font-size: 2.8125rem;
+            line-height: 4rem;
+            padding: 50px 0; } }
       #section-4 div #top-part p {
         font-size: 0.9375rem;
         line-height: 1.1875rem;
         padding-top: 34px;
         padding-bottom: 50px;
         text-align: justify; }
+        @media (min-width: 768px) {
+          #section-4 div #top-part p {
+            font-size: 1.25rem;
+            line-height: 1.5625rem;
+            padding: 34px 100px 100px 100px; } }
     #section-4 div aside {
       background-image: url("../img/section-4/groot_man.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 200px; }
+      height: 250px; }
+      @media (min-width: 768px) {
+        #section-4 div aside {
+          height: 400px; } }
     #section-4 div #bottom-part {
       padding: 0 10px; }
       #section-4 div #bottom-part p {
@@ -609,15 +656,27 @@ textarea {
         line-height: 1.1875rem;
         padding-top: 50px;
         text-align: justify; }
+        @media (min-width: 768px) {
+          #section-4 div #bottom-part p {
+            font-size: 1.25rem;
+            line-height: 1.5625rem;
+            padding: 100px 100px 50px 100px; } }
       #section-4 div #bottom-part > section {
         border-right: 4px solid #777B7C;
         padding: 100px 0;
         text-align: center; }
+        @media (min-width: 768px) {
+          #section-4 div #bottom-part > section {
+            padding-bottom: 125px; } }
         #section-4 div #bottom-part > section a {
           background-color: #000;
           color: #fff;
-          padding: 10px; }
-
+          font-weight: 700;
+          padding: 10px 20px; }
+          @media (min-width: 768px) {
+            #section-4 div #bottom-part > section a {
+              font-size: 1.5625rem;
+              padding: 20px 50px; } }
 /* =============
     Section 5
 ============= */
@@ -636,11 +695,19 @@ textarea {
         line-height: 1.875rem;
         padding-bottom: 30px;
         text-align: center; }
+        @media (min-width: 768px) {
+          #section-5 div ul #part-1 h3 {
+            font-size: 2.8125rem; } }
       #section-5 div ul #part-1 p {
         font-size: 0.9375rem;
         line-height: 1.1875rem;
         padding-bottom: 50px;
         text-align: justify; }
+        @media (min-width: 768px) {
+          #section-5 div ul #part-1 p {
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+            padding: 20px 100px 100px 100px; } }
       #section-5 div ul #part-1 aside {
         background-image: url("../img/section-5/spiderman.jpg");
         background-position: center;
@@ -655,11 +722,19 @@ textarea {
         line-height: 1.875rem;
         padding-bottom: 30px;
         text-align: center; }
+        @media (min-width: 768px) {
+          #section-5 div ul #part-2 h3 {
+            font-size: 2.8125rem; } }
       #section-5 div ul #part-2 p {
         font-size: 0.9375rem;
         line-height: 1.1875rem;
         padding-bottom: 50px;
         text-align: justify; }
+        @media (min-width: 768px) {
+          #section-5 div ul #part-2 p {
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+            padding: 20px 100px 100px 100px; } }
       #section-5 div ul #part-2 aside {
         background-image: url("../img/section-5/steps.jpg");
         background-position: center;
@@ -674,10 +749,18 @@ textarea {
         line-height: 1.875rem;
         padding-bottom: 30px;
         text-align: center; }
+        @media (min-width: 768px) {
+          #section-5 div ul #part-3 h3 {
+            font-size: 2.8125rem; } }
       #section-5 div ul #part-3 p {
         font-size: 0.9375rem;
         line-height: 1.875rem;
         text-align: center; }
+        @media (min-width: 768px) {
+          #section-5 div ul #part-3 p {
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+            padding-top: 20px; } }
       #section-5 div ul #part-3 aside {
         background-image: url("../img/section-5/comic.jpg");
         background-position: center;
@@ -686,15 +769,27 @@ textarea {
         height: 250px;
         margin-top: 50px; }
     #section-5 div section {
-      padding: 53px 0;
+      padding: 53px;
       text-align: center; }
+      @media (min-width: 768px) {
+        #section-5 div section {
+          padding: 80px; } }
       #section-5 div section > a {
         background-color: #000;
         color: #fff;
-        padding: 10px; }
+        font-weight: 700;
+        padding: 10px 20px; }
+        @media (min-width: 768px) {
+          #section-5 div section > a {
+            font-size: 1.875rem;
+            padding: 20px 50px; } }
       #section-5 div section > p {
         color: #fff;
         padding-top: 30px; }
+        @media (min-width: 768px) {
+          #section-5 div section > p {
+            font-size: 1.25rem;
+            padding-top: 40px; } }
         #section-5 div section > p span a {
           color: #fff; }
 
