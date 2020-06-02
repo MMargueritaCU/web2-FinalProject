@@ -34,10 +34,37 @@
             padding-top: 300px;
             text-align: center;
 
+            @include md{
+                padding-top: 375px;
+            }
+
+            @include lg{
+                padding-top: 500px;
+            }
+
+            @include xl{
+                padding-top: 700px;
+            }
+
             a{
                 background-color: $black;
                 color: $white;
-                padding: 20px;
+                font-size: rem-calc(15);
+                font-weight: 700;
+                padding: 20px 40px;
+
+                @include md{
+                    font-size: rem-calc(25);
+                }
+
+                @include lg{
+                    font-size: rem-calc(30);
+                    padding: 20px 100px;
+                }
+
+                @include xl{
+                    padding: 20px 150px;
+                }
             }
         }
     }
