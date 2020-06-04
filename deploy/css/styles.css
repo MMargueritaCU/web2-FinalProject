@@ -450,8 +450,7 @@ textarea {
     padding: 20px 61px; }
     @media (min-width: 768px) {
       #footer div #mobile {
-        justify-content: space-between;
-        padding: 20px 350px; } }
+        padding: 20px 300px; } }
   #footer div #larger {
     display: none; }
     @media (min-width: 768px) {
