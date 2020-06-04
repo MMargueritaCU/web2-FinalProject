@@ -448,6 +448,10 @@ textarea {
     display: flex;
     justify-content: space-between;
     padding: 20px 61px; }
+    @media (min-width: 768px) {
+      #footer div #mobile {
+        justify-content: space-between;
+        padding: 20px 350px; } }
   #footer div #larger {
     display: none; }
     @media (min-width: 768px) {
@@ -825,16 +829,30 @@ textarea {
       line-height: 1.875rem;
       padding: 45px 0;
       text-align: center; }
+      @media (min-width: 768px) {
+        #section-6 div h2 {
+          font-size: 2.8125rem; } }
     #section-6 div section {
       background-image: url("../img/section-6/poster.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height: 300px; }
+      @media (min-width: 768px) {
+        #section-6 div section {
+          height: 500px; } }
     #section-6 div article {
       padding: 50px 0;
       text-align: center; }
+      @media (min-width: 768px) {
+        #section-6 div article {
+          padding: 70px 0; } }
       #section-6 div article a {
         background-color: #000;
         color: #fff;
-        padding: 10px; }
+        padding: 10px 20px; }
+        @media (min-width: 768px) {
+          #section-6 div article a {
+            font-size: 1.5625rem;
+            font-weight: 700;
+            padding: 20px 50px; } }

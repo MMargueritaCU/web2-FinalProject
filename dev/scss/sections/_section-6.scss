@@ -14,6 +14,10 @@
             line-height: rem-calc(30);
             padding: 45px 0;
             text-align: center;
+
+            @include md{
+                font-size: rem-calc(45);
+            }
         }
 
         section{
@@ -22,16 +26,30 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 300px;
+
+            @include md{
+                height: 500px;
+            }
         }
 
         article{
             padding: 50px 0;
             text-align: center;
 
+            @include md{
+                padding: 70px 0;
+            }
+
             a{
                 background-color: $black;
                 color: $white;
-                padding: 10px;
+                padding: 10px 20px;
+
+                @include md{
+                    font-size: rem-calc(25);
+                    font-weight: 700;
+                    padding: 20px 50px;
+                }
             }
         }
     }
