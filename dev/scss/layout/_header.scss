@@ -27,12 +27,11 @@
             a{
                 background-color: $white;
                 border-radius: 40px;
-                padding: 10px 40px;
-                
-                p{
-                    color: $black;
-                    text-align: center;
-                }
+                color: $black;
+                font-size: rem-calc(23);
+                font-weight: 700;
+                padding: 5px 40px;
+                text-align: center;
             }
         }
 
@@ -52,6 +51,16 @@
                 padding: 20px;
             }
 
+            i:link,
+            i:visited{
+                color: $brown;
+            }
+
+            i:hover,
+            i:active{
+                color: $white;
+            }
+
             h1{
                 color: $brown;
                 font-size: rem-calc(24);
@@ -68,16 +77,39 @@
 
             h1{
                 color: $brown;
+                display: none;
+                font-size: rem-calc(40);
+
+                @include lg{
+                    display: flex;
+                }
             }
 
             ul{
-                display: flex;
+                display: block;
+                padding-bottom: 50px;
+
+                @include lg{
+                    display: flex;
+                    padding-bottom: 0;
+                }
 
                 li{
-                    padding: 0 30px;
+                    padding: 25px;
 
                     a{
+                        font-size: rem-calc(25);
+                        font-weight: 700;
+                    }
+
+                    a:link,
+                    a:visited{
                         color: $brown;
+                    }
+
+                    a:hover,
+                    a:active{
+                        color: $white;
                     }
                 }
             }

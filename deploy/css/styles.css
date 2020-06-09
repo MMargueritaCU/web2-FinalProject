@@ -405,10 +405,11 @@ textarea {
     #header div #top a {
       background-color: #fff;
       border-radius: 40px;
-      padding: 10px 40px; }
-      #header div #top a p {
-        color: #000;
-        text-align: center; }
+      color: #000;
+      font-size: 1.4375rem;
+      font-weight: 700;
+      padding: 5px 40px;
+      text-align: center; }
   #header div #burger-container {
     display: flex;
     justify-content: space-between;
@@ -421,6 +422,12 @@ textarea {
       cursor: pointer;
       font-size: 30px;
       padding: 20px; }
+    #header div #burger-container i:link,
+    #header div #burger-container i:visited {
+      color: #A58D85; }
+    #header div #burger-container i:hover,
+    #header div #burger-container i:active {
+      color: #fff; }
     #header div #burger-container h1 {
       color: #A58D85;
       font-size: 1.5rem;
@@ -431,33 +438,77 @@ textarea {
       #header div #nav-container {
         display: flex !important; } }
     #header div #nav-container h1 {
-      color: #A58D85; }
+      color: #A58D85;
+      display: none;
+      font-size: 2.5rem; }
+      @media (min-width: 992px) {
+        #header div #nav-container h1 {
+          display: flex; } }
     #header div #nav-container ul {
-      display: flex; }
+      display: block;
+      padding-bottom: 50px; }
+      @media (min-width: 992px) {
+        #header div #nav-container ul {
+          display: flex;
+          padding-bottom: 0; } }
       #header div #nav-container ul li {
-        padding: 0 30px; }
+        padding: 25px; }
         #header div #nav-container ul li a {
+          font-size: 1.5625rem;
+          font-weight: 700; }
+        #header div #nav-container ul li a:link,
+        #header div #nav-container ul li a:visited {
           color: #A58D85; }
+        #header div #nav-container ul li a:hover,
+        #header div #nav-container ul li a:active {
+          color: #fff; }
 
 /* =============
     Footer
 ============= */
 #footer {
   background-color: #000; }
-  #footer div #mobile {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 61px; }
-    @media (min-width: 768px) {
-      #footer div #mobile {
-        padding: 20px 300px; } }
-  #footer div #larger {
-    display: none; }
-    @media (min-width: 768px) {
-      #footer div #larger {
-        display: flex; } }
-    #footer div #larger li h5 {
-      color: #A58D85; }
+  #footer div {
+    padding: 40px 0; }
+    #footer div #mobile {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 61px; }
+      @media (min-width: 768px) {
+        #footer div #mobile {
+          padding: 20px 300px; } }
+    #footer div #larger {
+      display: none; }
+      @media (min-width: 768px) {
+        #footer div #larger {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 220px; } }
+      #footer div #larger li a {
+        font-size: 1rem;
+        font-weight: 700; }
+      #footer div #larger li a:link,
+      #footer div #larger li a:visited {
+        color: #A58D85; }
+      #footer div #larger li a:hover,
+      #footer div #larger li a:active {
+        color: #fff; }
+    #footer div #larger2 {
+      display: none; }
+      @media (min-width: 768px) {
+        #footer div #larger2 {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 105px; } }
+      #footer div #larger2 li a {
+        font-size: 1rem;
+        font-weight: 700; }
+      #footer div #larger2 li a:link,
+      #footer div #larger2 li a:visited {
+        color: #A58D85; }
+      #footer div #larger2 li a:hover,
+      #footer div #larger2 li a:active {
+        color: #fff; }
 
 /* =============
     Section 1
@@ -498,8 +549,6 @@ textarea {
         #section-1 .grid-content > div {
           padding-top: 700px; } }
       #section-1 .grid-content > div a {
-        background-color: #000;
-        color: #fff;
         font-size: 0.9375rem;
         font-weight: 700;
         padding: 20px 40px; }
@@ -513,6 +562,15 @@ textarea {
         @media (min-width: 1200px) {
           #section-1 .grid-content > div a {
             padding: 20px 150px; } }
+      #section-1 .grid-content > div a:link,
+      #section-1 .grid-content > div a:visited {
+        background-color: #000;
+        color: #fff; }
+      #section-1 .grid-content > div a:hover,
+      #section-1 .grid-content > div a:active {
+        background-color: #fff;
+        color: #000; }
+
 /* =============
     Section 1 Heading
 ============= */
@@ -608,8 +666,6 @@ textarea {
             line-height: 1.875rem;
             padding-bottom: 100px; } }
       #section-3 div article a {
-        background-color: #000;
-        color: #fff;
         font-weight: 700;
         padding: 10px 20px; }
         @media (min-width: 768px) {
@@ -617,6 +673,14 @@ textarea {
             font-size: 1.5625rem;
             line-height: 1.875rem;
             padding: 20px 40px; } }
+      #section-3 div article a:link,
+      #section-3 div article a:visited {
+        background-color: #000;
+        color: #fff; }
+      #section-3 div article a:hover,
+      #section-3 div article a:active {
+        background-color: #fff;
+        color: #000; }
     #section-3 div aside {
       background-image: url("../img/section-3/comic-man.jpg");
       background-position: center;
@@ -690,14 +754,20 @@ textarea {
           #section-4 div #bottom-part > section {
             padding-bottom: 125px; } }
         #section-4 div #bottom-part > section a {
-          background-color: #000;
-          color: #fff;
           font-weight: 700;
           padding: 10px 20px; }
           @media (min-width: 768px) {
             #section-4 div #bottom-part > section a {
               font-size: 1.5625rem;
               padding: 20px 50px; } }
+        #section-4 div #bottom-part > section a:link,
+        #section-4 div #bottom-part > section a:visited {
+          background-color: #000;
+          color: #fff; }
+        #section-4 div #bottom-part > section a:hover,
+        #section-4 div #bottom-part > section a:active {
+          background-color: #A58D85; }
+
 /* =============
     Section 5
 ============= */
@@ -796,14 +866,20 @@ textarea {
         #section-5 div section {
           padding: 80px; } }
       #section-5 div section > a {
-        background-color: #000;
-        color: #fff;
         font-weight: 700;
         padding: 10px 20px; }
         @media (min-width: 768px) {
           #section-5 div section > a {
             font-size: 1.875rem;
             padding: 20px 50px; } }
+      #section-5 div section > a:link,
+      #section-5 div section > a:visited {
+        background-color: #000;
+        color: #fff; }
+      #section-5 div section > a:hover,
+      #section-5 div section > a:active {
+        background-color: #fff;
+        color: #000; }
       #section-5 div section > p {
         color: #fff;
         padding-top: 30px; }
@@ -813,6 +889,12 @@ textarea {
             padding-top: 40px; } }
         #section-5 div section > p span a {
           color: #fff; }
+        #section-5 div section > p span a:link,
+        #section-5 div section > p span a:visited {
+          color: #fff; }
+        #section-5 div section > p span a:hover,
+        #section-5 div section > p span a:active {
+          color: #000; }
 
 /* =============
     Section 6
@@ -855,3 +937,10 @@ textarea {
             font-size: 1.5625rem;
             font-weight: 700;
             padding: 20px 50px; } }
+      #section-6 div article a:link,
+      #section-6 div article a:visited {
+        background-color: #000;
+        color: #fff; }
+      #section-6 div article a:hover,
+      #section-6 div article a:active {
+        background-color: #A58D85; }

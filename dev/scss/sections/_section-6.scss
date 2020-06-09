@@ -51,6 +51,17 @@
                     padding: 20px 50px;
                 }
             }
+
+            a:link,
+            a:visited{
+                background-color: $black;
+                color: $white;
+            }
+
+            a:hover,
+            a:active{
+                background-color: $brown;
+            }
         }
     }
 }

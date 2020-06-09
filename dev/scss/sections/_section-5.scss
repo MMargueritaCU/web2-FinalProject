@@ -132,8 +132,6 @@
             }
 
             >a{
-                background-color: $black;
-                color: $white;
                 font-weight: 700;
                 padding: 10px 20px;
 
@@ -141,6 +139,18 @@
                     font-size: rem-calc(30);
                     padding: 20px 50px;
                 }
+            }
+
+            >a:link,
+            >a:visited{
+                background-color: $black;
+                color: $white;
+            }
+
+            >a:hover,
+            >a:active{
+                background-color: $white;
+                color: $black;
             }
 
             >p{
@@ -155,6 +165,16 @@
                 span{
                     a{
                         color: $white;
+                    }
+
+                    a:link,
+                    a:visited{
+                        color: $white;
+                    }
+
+                    a:hover,
+                    a:active{
+                        color: $black;
                     }
                 }
             }

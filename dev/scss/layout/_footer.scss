@@ -6,6 +6,8 @@
     background-color: $black;
 
     div{
+        padding: 40px 0;
+        
         #mobile{
             display: flex;
             justify-content: space-between;
@@ -21,10 +23,49 @@
 
             @include md{
                 display: flex;
+                justify-content: space-between;
+                padding: 20px 220px;
             }
             li{
-                h5{
+                a{
+                    font-size: rem-calc(16);
+                    font-weight: 700;
+                }
+
+                a:link,
+                a:visited{
                     color: $brown;
+                }
+
+                a:hover,
+                a:active{
+                    color: $white;
+                }
+            }
+        }
+
+        #larger2{
+            display: none;
+
+            @include md{
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 105px;
+            }
+            li{
+                a{
+                    font-size: rem-calc(16);
+                    font-weight: 700;
+                }
+
+                a:link,
+                a:visited{
+                    color: $brown;
+                }
+
+                a:hover,
+                a:active{
+                    color: $white;
                 }
             }
         }

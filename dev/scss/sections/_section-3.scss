@@ -46,8 +46,6 @@
             }
 
             a{
-                background-color: $black;
-                color: $white;
                 font-weight: 700;
                 padding: 10px 20px;
 
@@ -56,6 +54,18 @@
                     line-height: rem-calc(30);
                     padding: 20px 40px;
                 }
+            }
+
+            a:link,
+            a:visited{
+                background-color: $black;
+                color: $white;
+            }
+
+            a:hover,
+            a:active{
+                background-color: $white;
+                color: $black;
             }
        }
 
