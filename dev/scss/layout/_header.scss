@@ -24,14 +24,17 @@
                 padding-right: 30px;
             }
 
-            a{
+            input{
                 background-color: $white;
                 border-radius: 40px;
                 color: $black;
-                font-size: rem-calc(23);
+                font-size: rem-calc(16);
                 font-weight: 700;
-                padding: 5px 40px;
+                padding: 0 40px;
                 text-align: center;
+            }
+            input:focus, textarea:focus, select:focus{
+                outline: none;
             }
         }
 
@@ -75,22 +78,13 @@
                 display: flex !important;
             }
 
-            h1{
-                color: $brown;
-                display: none;
-                font-size: rem-calc(40);
-
-                @include lg{
-                    display: flex;
-                }
-            }
-
             ul{
                 display: block;
                 padding-bottom: 50px;
 
                 @include lg{
                     display: flex;
+                    justify-content: center;
                     padding-bottom: 0;
                 }
 
@@ -112,6 +106,18 @@
                         color: $white;
                     }
                 }
+
+                #header-nav1{
+                    display: none;
+
+                    @include lg{
+                        display: flex;
+                    }
+
+                    a{
+                        font-size: rem-calc(40);
+                    }
+                } 
             }
         }
     }

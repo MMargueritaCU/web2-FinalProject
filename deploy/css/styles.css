@@ -402,14 +402,16 @@ textarea {
     #header div #top h5 {
       color: #A58D85;
       padding-right: 30px; }
-    #header div #top a {
+    #header div #top input {
       background-color: #fff;
       border-radius: 40px;
       color: #000;
-      font-size: 1.4375rem;
+      font-size: 1rem;
       font-weight: 700;
-      padding: 5px 40px;
+      padding: 0 40px;
       text-align: center; }
+    #header div #top input:focus, #header div #top textarea:focus, #header div #top select:focus {
+      outline: none; }
   #header div #burger-container {
     display: flex;
     justify-content: space-between;
@@ -437,19 +439,13 @@ textarea {
     @media (min-width: 992px) {
       #header div #nav-container {
         display: flex !important; } }
-    #header div #nav-container h1 {
-      color: #A58D85;
-      display: none;
-      font-size: 2.5rem; }
-      @media (min-width: 992px) {
-        #header div #nav-container h1 {
-          display: flex; } }
     #header div #nav-container ul {
       display: block;
       padding-bottom: 50px; }
       @media (min-width: 992px) {
         #header div #nav-container ul {
           display: flex;
+          justify-content: center;
           padding-bottom: 0; } }
       #header div #nav-container ul li {
         padding: 25px; }
@@ -462,6 +458,13 @@ textarea {
         #header div #nav-container ul li a:hover,
         #header div #nav-container ul li a:active {
           color: #fff; }
+      #header div #nav-container ul #header-nav1 {
+        display: none; }
+        @media (min-width: 992px) {
+          #header div #nav-container ul #header-nav1 {
+            display: flex; } }
+        #header div #nav-container ul #header-nav1 a {
+          font-size: 2.5rem; }
 
 /* =============
     Footer
@@ -598,8 +601,20 @@ textarea {
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-2 .";
   padding-bottom: 60px; }
+  @media (min-width: 992px) {
+    #section-2 {
+      grid-template-columns: none; } }
   #section-2 div {
     grid-area: section-2; }
+    @media (min-width: 992px) {
+      #section-2 div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "aside article";
+        padding: 50px 0; } }
+    @media (min-width: 992px) {
+      #section-2 div article {
+        grid-area: article; } }
     #section-2 div article h2 {
       font-size: 1.5625rem;
       line-height: 1.875rem;
@@ -628,6 +643,10 @@ textarea {
       @media (min-width: 768px) {
         #section-2 div aside {
           height: 600px; } }
+      @media (min-width: 992px) {
+        #section-2 div aside {
+          grid-area: aside;
+          height: 100%; } }
 /* =============
     Section 3
 ============= */
@@ -636,14 +655,26 @@ textarea {
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". section-3 ."; }
+  @media (min-width: 992px) {
+    #section-3 {
+      padding: 70px 0; } }
   #section-3 div {
     grid-area: section-3;
     padding: 80px 0; }
     @media (min-width: 768px) {
       #section-3 div {
         padding: 120px 0; } }
+    @media (min-width: 992px) {
+      #section-3 div {
+        padding: 0; } }
     #section-3 div article {
       text-align: center; }
+      @media (min-width: 992px) {
+        #section-3 div article {
+          display: grid;
+          grid-template-columns: repeat(4, 1 fr);
+          grid-template-areas: "title title" "paragraph button";
+          padding: 40px 80px 0 80px; } }
       #section-3 div article h3 {
         color: #fff;
         font-size: 1.5625rem;
@@ -654,6 +685,9 @@ textarea {
             font-size: 2.8125rem;
             line-height: 3.4375rem;
             padding-bottom: 100px; } }
+        @media (min-width: 992px) {
+          #section-3 div article h3 {
+            grid-area: title; } }
       #section-3 div article p {
         color: #fff;
         font-size: 0.9375rem;
@@ -665,11 +699,18 @@ textarea {
             font-size: 1.5625rem;
             line-height: 1.875rem;
             padding-bottom: 100px; } }
-      #section-3 div article a {
+        @media (min-width: 992px) {
+          #section-3 div article p {
+            grid-area: paragraph;
+            padding-right: 100px; } }
+      @media (min-width: 992px) {
+        #section-3 div article div {
+          grid-area: button; } }
+      #section-3 div article div a {
         font-weight: 700;
         padding: 10px 20px; }
         @media (min-width: 768px) {
-          #section-3 div article a {
+          #section-3 div article div a {
             font-size: 1.5625rem;
             line-height: 1.875rem;
             padding: 20px 40px; } }
@@ -692,6 +733,10 @@ textarea {
         #section-3 div aside {
           height: 400px;
           margin-top: 100px; } }
+      @media (min-width: 992px) {
+        #section-3 div aside {
+          height: 600px;
+          margin-top: 0; } }
 /* =============
     Section 4
 ============= */
@@ -780,25 +825,25 @@ textarea {
     grid-area: section-5; }
     #section-5 div ul #part-1 {
       color: #fff;
-      padding-top: 63px; }
-      #section-5 div ul #part-1 h3 {
+      padding-top: 50px; }
+      #section-5 div ul #part-1 section h3 {
         font-size: 1.5625rem;
         line-height: 1.875rem;
-        padding-bottom: 30px;
+        padding-bottom: 15px;
         text-align: center; }
         @media (min-width: 768px) {
-          #section-5 div ul #part-1 h3 {
+          #section-5 div ul #part-1 section h3 {
             font-size: 2.8125rem; } }
-      #section-5 div ul #part-1 p {
+      #section-5 div ul #part-1 section p {
         font-size: 0.9375rem;
         line-height: 1.1875rem;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
         text-align: justify; }
         @media (min-width: 768px) {
-          #section-5 div ul #part-1 p {
+          #section-5 div ul #part-1 section p {
             font-size: 1.25rem;
             line-height: 1.875rem;
-            padding: 20px 100px 100px 100px; } }
+            padding: 40px 30px; } }
       #section-5 div ul #part-1 aside {
         background-image: url("../img/section-5/spiderman.jpg");
         background-position: center;
@@ -808,21 +853,21 @@ textarea {
     #section-5 div ul #part-2 {
       color: #fff;
       padding-top: 63px; }
-      #section-5 div ul #part-2 h3 {
+      #section-5 div ul #part-2 section h3 {
         font-size: 1.5625rem;
         line-height: 1.875rem;
         padding-bottom: 30px;
         text-align: center; }
         @media (min-width: 768px) {
-          #section-5 div ul #part-2 h3 {
+          #section-5 div ul #part-2 section h3 {
             font-size: 2.8125rem; } }
-      #section-5 div ul #part-2 p {
+      #section-5 div ul #part-2 section p {
         font-size: 0.9375rem;
         line-height: 1.1875rem;
         padding-bottom: 50px;
         text-align: justify; }
         @media (min-width: 768px) {
-          #section-5 div ul #part-2 p {
+          #section-5 div ul #part-2 section p {
             font-size: 1.25rem;
             line-height: 1.875rem;
             padding: 20px 100px 100px 100px; } }
@@ -835,20 +880,20 @@ textarea {
     #section-5 div ul #part-3 {
       color: #fff;
       padding-top: 63px; }
-      #section-5 div ul #part-3 h3 {
+      #section-5 div ul #part-3 section h3 {
         font-size: 1.5625rem;
         line-height: 1.875rem;
         padding-bottom: 30px;
         text-align: center; }
         @media (min-width: 768px) {
-          #section-5 div ul #part-3 h3 {
+          #section-5 div ul #part-3 section h3 {
             font-size: 2.8125rem; } }
-      #section-5 div ul #part-3 p {
+      #section-5 div ul #part-3 section p {
         font-size: 0.9375rem;
         line-height: 1.875rem;
         text-align: center; }
         @media (min-width: 768px) {
-          #section-5 div ul #part-3 p {
+          #section-5 div ul #part-3 section p {
             font-size: 1.25rem;
             line-height: 1.875rem;
             padding-top: 20px; } }

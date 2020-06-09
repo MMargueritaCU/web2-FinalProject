@@ -13,29 +13,31 @@
         ul{
             #part-1{
                 color: $white;
-                padding-top: 63px;
+                padding-top: 50px;
 
-                h3{
-                    font-size: rem-calc(25);
-                    line-height: rem-calc(30);
-                    padding-bottom: 30px;
-                    text-align: center;
-
-                    @include md{
-                        font-size: rem-calc(45);
-                    }
-                }
-
-                p{
-                    font-size: rem-calc(15);
-                    line-height: rem-calc(19);
-                    padding-bottom: 50px;
-                    text-align: justify;
-
-                    @include md{
-                        font-size: rem-calc(20);
+                section{
+                    h3{
+                        font-size: rem-calc(25);
                         line-height: rem-calc(30);
-                        padding: 20px 100px 100px 100px;
+                        padding-bottom: 15px;
+                        text-align: center;
+    
+                        @include md{
+                            font-size: rem-calc(45);
+                        }
+                    }
+    
+                    p{
+                        font-size: rem-calc(15);
+                        line-height: rem-calc(19);
+                        padding-bottom: 25px;
+                        text-align: justify;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            line-height: rem-calc(30);
+                            padding: 40px 30px;
+                        }
                     }
                 }
 
@@ -52,27 +54,29 @@
                 color: $white;
                 padding-top: 63px;
 
-                h3{
-                    font-size: rem-calc(25);
-                    line-height: rem-calc(30);
-                    padding-bottom: 30px;
-                    text-align: center;
-
-                    @include md{
-                        font-size: rem-calc(45);
-                    }
-                }
-
-                p{
-                    font-size: rem-calc(15);
-                    line-height: rem-calc(19);
-                    padding-bottom: 50px;
-                    text-align: justify;
-
-                    @include md{
-                        font-size: rem-calc(20);
+                section{
+                    h3{
+                        font-size: rem-calc(25);
                         line-height: rem-calc(30);
-                        padding: 20px 100px 100px 100px;
+                        padding-bottom: 30px;
+                        text-align: center;
+    
+                        @include md{
+                            font-size: rem-calc(45);
+                        }
+                    }
+    
+                    p{
+                        font-size: rem-calc(15);
+                        line-height: rem-calc(19);
+                        padding-bottom: 50px;
+                        text-align: justify;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            line-height: rem-calc(30);
+                            padding: 20px 100px 100px 100px;
+                        }
                     }
                 }
 
@@ -89,26 +93,28 @@
                 color: $white;
                 padding-top: 63px;
 
-                h3{
-                    font-size: rem-calc(25);
-                    line-height: rem-calc(30);
-                    padding-bottom: 30px;
-                    text-align: center;
-
-                    @include md{
-                        font-size: rem-calc(45);
-                    }
-                }
-
-                p{
-                    font-size: rem-calc(15);
-                    line-height: rem-calc(30);
-                    text-align: center;
-
-                    @include md{
-                        font-size: rem-calc(20);
+                section{
+                    h3{
+                        font-size: rem-calc(25);
                         line-height: rem-calc(30);
-                        padding-top: 20px;
+                        padding-bottom: 30px;
+                        text-align: center;
+    
+                        @include md{
+                            font-size: rem-calc(45);
+                        }
+                    }
+    
+                    p{
+                        font-size: rem-calc(15);
+                        line-height: rem-calc(30);
+                        text-align: center;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            line-height: rem-calc(30);
+                            padding-top: 20px;
+                        }
                     }
                 }
 

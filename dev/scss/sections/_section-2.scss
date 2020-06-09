@@ -7,10 +7,26 @@
     grid-template-areas: ". section-2 .";
     padding-bottom: 60px;
 
+    @include lg{
+        grid-template-columns: none;
+    }
+
     div{
         grid-area: section-2;
 
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "aside article";
+            padding: 50px 0;
+        }
+
         article{
+
+            @include lg{
+                grid-area: article;
+            }
+
             h2{
                 font-size: rem-calc(25);
                 line-height: rem-calc(30);
@@ -46,6 +62,11 @@
 
             @include md{
                 height: 600px;
+            }
+
+            @include lg{
+                grid-area: aside;
+                height: 100%;
             }
         }
     }
