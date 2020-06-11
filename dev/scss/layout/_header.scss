@@ -12,16 +12,24 @@
     div{
         #top{
             display: none;
-            padding: 20px;
+            padding: 30px 100px 0 0;
 
             @include lg{
                 display: flex;
                 justify-content: flex-end;
             }
 
-            h5{
+            a:link,
+            a:visited{
                 color: $brown;
-                padding-right: 30px;
+                font-size: rem-calc(20);
+                font-weight: 700;
+                padding: 10px 30px;
+            }
+
+            a:hover,
+            a:active{
+                color: $white;
             }
 
             input{

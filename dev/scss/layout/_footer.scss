@@ -7,6 +7,14 @@
 
     div{
         padding: 40px 0;
+
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "mobile larger"
+                                ". larger2";
+            padding-right: 70px;
+        }
         
         #mobile{
             display: flex;
@@ -15,6 +23,11 @@
 
             @include md{
                 padding: 20px 300px;
+            }
+
+            @include lg{
+                grid-area: mobile;
+                padding: 20px 200px;
             }
         }
         
@@ -26,6 +39,12 @@
                 justify-content: space-between;
                 padding: 20px 220px;
             }
+
+            @include lg{
+                grid-area: larger;
+                padding: 20px 100px;
+            }
+
             li{
                 a{
                     font-size: rem-calc(16);
@@ -52,6 +71,12 @@
                 justify-content: space-between;
                 padding: 20px 105px;
             }
+
+            @include lg{
+                grid-area: larger2;
+                padding: 20px;
+            }
+
             li{
                 a{
                     font-size: rem-calc(16);

@@ -394,14 +394,20 @@ textarea {
   width: 100%; }
   #header div #top {
     display: none;
-    padding: 20px; }
+    padding: 30px 100px 0 0; }
     @media (min-width: 992px) {
       #header div #top {
         display: flex;
         justify-content: flex-end; } }
-    #header div #top h5 {
+    #header div #top a:link,
+    #header div #top a:visited {
       color: #A58D85;
-      padding-right: 30px; }
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 10px 30px; }
+    #header div #top a:hover,
+    #header div #top a:active {
+      color: #fff; }
     #header div #top input {
       background-color: #fff;
       border-radius: 40px;
@@ -474,6 +480,12 @@ textarea {
   background-color: #000; }
   #footer div {
     padding: 40px 0; }
+    @media (min-width: 992px) {
+      #footer div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "mobile larger" ". larger2";
+        padding-right: 70px; } }
     #footer div #mobile {
       display: flex;
       justify-content: space-between;
@@ -481,6 +493,10 @@ textarea {
       @media (min-width: 768px) {
         #footer div #mobile {
           padding: 20px 300px; } }
+      @media (min-width: 992px) {
+        #footer div #mobile {
+          grid-area: mobile;
+          padding: 20px 200px; } }
     #footer div #larger {
       display: none; }
       @media (min-width: 768px) {
@@ -488,6 +504,10 @@ textarea {
           display: flex;
           justify-content: space-between;
           padding: 20px 220px; } }
+      @media (min-width: 992px) {
+        #footer div #larger {
+          grid-area: larger;
+          padding: 20px 100px; } }
       #footer div #larger li a {
         font-size: 1rem;
         font-weight: 700; }
@@ -504,6 +524,10 @@ textarea {
           display: flex;
           justify-content: space-between;
           padding: 20px 105px; } }
+      @media (min-width: 992px) {
+        #footer div #larger2 {
+          grid-area: larger2;
+          padding: 20px; } }
       #footer div #larger2 li a {
         font-size: 1rem;
         font-weight: 700; }
@@ -530,10 +554,10 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: section-1;
-    height: 362px; }
+    height: 400px; }
     @media (min-width: 768px) {
       #section-1 .grid-content {
-        height: 444px; } }
+        height: 500px; } }
     @media (min-width: 992px) {
       #section-1 .grid-content {
         height: 650px; } }
@@ -719,6 +743,10 @@ textarea {
             font-size: 1.5625rem;
             line-height: 1.875rem;
             padding: 20px 40px; } }
+        @media (min-width: 992px) {
+          #section-3 div article div a {
+            font-size: 1.875rem;
+            padding: 20px 70px; } }
       #section-3 div article a:link,
       #section-3 div article a:visited {
         background-color: #000;
@@ -760,7 +788,7 @@ textarea {
         border-left: 4px solid #777B7C;
         font-size: 1.5625rem;
         line-height: 1.875rem;
-        padding: 30px 0;
+        padding: 50px 0;
         text-align: center; }
         @media (min-width: 768px) {
           #section-4 div #top-part h2 {
@@ -794,6 +822,9 @@ textarea {
       @media (min-width: 768px) {
         #section-4 div aside {
           height: 400px; } }
+      @media (min-width: 992px) {
+        #section-4 div aside {
+          height: 630px; } }
     #section-4 div #bottom-part {
       padding: 0 10px; }
       #section-4 div #bottom-part p {
@@ -823,6 +854,10 @@ textarea {
             #section-4 div #bottom-part > section a {
               font-size: 1.5625rem;
               padding: 20px 50px; } }
+          @media (min-width: 992px) {
+            #section-4 div #bottom-part > section a {
+              font-size: 1.875rem;
+              padding: 20px 150px; } }
         #section-4 div #bottom-part > section a:link,
         #section-4 div #bottom-part > section a:visited {
           background-color: #000;
@@ -844,6 +879,9 @@ textarea {
       grid-template-columns: none; } }
   #section-5 div {
     grid-area: section-5; }
+    @media (min-width: 992px) {
+      #section-5 div {
+        padding: 150px 0; } }
     #section-5 div ul #part-1 {
       color: #fff;
       padding-top: 50px; }
@@ -851,7 +889,8 @@ textarea {
         #section-5 div ul #part-1 {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-template-areas: "section aside"; } }
+          grid-template-areas: "section aside";
+          padding: 100px 0; } }
       @media (min-width: 992px) {
         #section-5 div ul #part-1 section {
           grid-area: section; } }
@@ -901,7 +940,8 @@ textarea {
         #section-5 div ul #part-2 {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-template-areas: "aside section"; } }
+          grid-template-areas: "aside section";
+          padding: 100px 0; } }
       @media (min-width: 992px) {
         #section-5 div ul #part-2 section {
           grid-area: section; } }
@@ -916,7 +956,8 @@ textarea {
         @media (min-width: 992px) {
           #section-5 div ul #part-2 section h3 {
             font-size: 3.3125rem;
-            line-height: 4rem; } }
+            line-height: 4rem;
+            text-align: left; } }
       #section-5 div ul #part-2 section p {
         font-size: 0.9375rem;
         line-height: 1.1875rem;
@@ -950,7 +991,8 @@ textarea {
         #section-5 div ul #part-3 {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-template-areas: "section aside"; } }
+          grid-template-areas: "section aside";
+          padding: 100px 0; } }
       @media (min-width: 992px) {
         #section-5 div ul #part-3 section {
           grid-area: section; } }
@@ -1004,8 +1046,12 @@ textarea {
         padding: 10px 20px; }
         @media (min-width: 768px) {
           #section-5 div section > a {
-            font-size: 1.875rem;
+            font-size: 1.5625rem;
             padding: 20px 50px; } }
+        @media (min-width: 992px) {
+          #section-5 div section > a {
+            font-size: 1.875rem;
+            padding: 20px 150px; } }
       #section-5 div section > a:link,
       #section-5 div section > a:visited {
         background-color: #000;
@@ -1039,6 +1085,12 @@ textarea {
   grid-template-areas: ". section-6 ."; }
   #section-6 div {
     grid-area: section-6; }
+    @media (min-width: 992px) {
+      #section-6 div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "image title" "image button";
+        padding: 120px 0 120px 70px; } }
     #section-6 div h2 {
       font-size: 1.5625rem;
       line-height: 1.875rem;
@@ -1047,6 +1099,12 @@ textarea {
       @media (min-width: 768px) {
         #section-6 div h2 {
           font-size: 2.8125rem; } }
+      @media (min-width: 992px) {
+        #section-6 div h2 {
+          font-size: 3.3125rem;
+          grid-area: title;
+          line-height: 4rem;
+          padding-top: 100px; } }
     #section-6 div section {
       background-image: url("../img/section-6/poster.jpg");
       background-position: center;
@@ -1056,12 +1114,19 @@ textarea {
       @media (min-width: 768px) {
         #section-6 div section {
           height: 500px; } }
+      @media (min-width: 992px) {
+        #section-6 div section {
+          grid-area: image;
+          width: 100%; } }
     #section-6 div article {
       padding: 50px 0;
       text-align: center; }
       @media (min-width: 768px) {
         #section-6 div article {
           padding: 70px 0; } }
+      @media (min-width: 992px) {
+        #section-6 div article {
+          grid-area: button; } }
       #section-6 div article a {
         background-color: #000;
         color: #fff;
@@ -1071,6 +1136,10 @@ textarea {
             font-size: 1.5625rem;
             font-weight: 700;
             padding: 20px 50px; } }
+        @media (min-width: 992px) {
+          #section-6 div article a {
+            font-size: 1.875rem;
+            padding: 20px 100px; } }
       #section-6 div article a:link,
       #section-6 div article a:visited {
         background-color: #000;

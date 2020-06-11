@@ -16,10 +16,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         grid-area: section-1;
-        height: 362px;
+        height: 400px;
 
         @include md{
-            height: 444px;
+            height: 500px;
         }
 
         @include lg{

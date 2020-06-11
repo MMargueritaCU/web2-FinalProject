@@ -14,6 +14,10 @@
     div{
         grid-area: section-5;
 
+        @include lg{
+            padding: 150px 0;
+        }
+
         ul{
             #part-1{
                 color: $white;
@@ -23,10 +27,11 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-areas: "section aside";
+                    padding: 100px 0;
                 }
 
                 section{
-
+                    
                     @include lg{
                         grid-area: section;
                     }
@@ -92,6 +97,7 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-areas: "aside section";
+                    padding: 100px 0;
                 }
 
                 section{
@@ -113,6 +119,7 @@
                         @include lg{
                             font-size: rem-calc(53);
                             line-height: rem-calc(64);
+                            text-align: left;
                         }
                     }
     
@@ -160,6 +167,7 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-areas: "section aside";
+                    padding: 100px 0;
                 }
 
                 section{
@@ -235,8 +243,13 @@
                 padding: 10px 20px;
 
                 @include md{
-                    font-size: rem-calc(30);
+                    font-size: rem-calc(25);
                     padding: 20px 50px;
+                }
+
+                @include lg{
+                    font-size: rem-calc(30);
+                    padding: 20px 150px;
                 }
             }
 

@@ -89,6 +89,11 @@
                         line-height: rem-calc(30);
                         padding: 20px 40px;
                     }
+
+                    @include lg{
+                        font-size: rem-calc(30);
+                        padding: 20px 70px;
+                    }
                 }
             }
 
