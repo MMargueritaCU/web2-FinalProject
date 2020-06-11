@@ -10,7 +10,7 @@
     @include lg{
         grid-template-columns: none;
     }
-
+    
     div{
         grid-area: section-2;
 
@@ -67,6 +67,7 @@
             @include lg{
                 grid-area: aside;
                 height: 100%;
+                width: 100%;
             }
         }
     }

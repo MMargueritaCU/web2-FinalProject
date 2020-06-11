@@ -7,6 +7,10 @@
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ". section-5 .";
 
+    @include lg{
+        grid-template-columns: none;
+    }
+
     div{
         grid-area: section-5;
 
@@ -15,7 +19,18 @@
                 color: $white;
                 padding-top: 50px;
 
+                @include lg{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: "section aside";
+                }
+
                 section{
+
+                    @include lg{
+                        grid-area: section;
+                    }
+
                     h3{
                         font-size: rem-calc(25);
                         line-height: rem-calc(30);
@@ -24,6 +39,12 @@
     
                         @include md{
                             font-size: rem-calc(45);
+                        }
+
+                        @include lg{
+                            font-size: rem-calc(53);
+                            line-height: rem-calc(64);
+                            text-align: left;
                         }
                     }
     
@@ -38,6 +59,10 @@
                             line-height: rem-calc(30);
                             padding: 40px 30px;
                         }
+
+                        @include lg{
+                            padding: 0;
+                        }
                     }
                 }
 
@@ -47,35 +72,64 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 250px;
+
+                    @include md{
+                        height: 400px;
+                    }
+
+                    @include lg{
+                        grid-area: aside;
+                        height: 100%;
+                    }
                 }
             }
 
             #part-2{
                 color: $white;
-                padding-top: 63px;
+                padding-top: 50px;
+
+                @include lg{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: "aside section";
+                }
 
                 section{
+
+                    @include lg{
+                        grid-area: section;
+                    }
+
                     h3{
                         font-size: rem-calc(25);
                         line-height: rem-calc(30);
-                        padding-bottom: 30px;
+                        padding-bottom: 15px;
                         text-align: center;
     
                         @include md{
                             font-size: rem-calc(45);
+                        }
+
+                        @include lg{
+                            font-size: rem-calc(53);
+                            line-height: rem-calc(64);
                         }
                     }
     
                     p{
                         font-size: rem-calc(15);
                         line-height: rem-calc(19);
-                        padding-bottom: 50px;
+                        padding-bottom: 25px;
                         text-align: justify;
     
                         @include md{
                             font-size: rem-calc(20);
                             line-height: rem-calc(30);
-                            padding: 20px 100px 100px 100px;
+                            padding: 40px 30px;
+                        }
+
+                        @include lg{
+                            padding: 0;
                         }
                     }
                 }
@@ -86,34 +140,65 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 250px;
+
+                    @include md{
+                        height: 400px;
+                    }
+
+                    @include lg{
+                        grid-area: aside;
+                        height: 100%;
+                    }
                 }
             }
 
             #part-3{
                 color: $white;
-                padding-top: 63px;
+                padding-top: 50px;
+
+                @include lg{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: "section aside";
+                }
 
                 section{
+
+                    @include lg{
+                        grid-area: section;
+                    }
+
                     h3{
                         font-size: rem-calc(25);
                         line-height: rem-calc(30);
-                        padding-bottom: 30px;
+                        padding-bottom: 20px;
                         text-align: center;
     
                         @include md{
                             font-size: rem-calc(45);
+                        }
+
+                        @include lg{
+                            font-size: rem-calc(53);
+                            line-height: rem-calc(64);
+                            text-align: left;
                         }
                     }
     
                     p{
                         font-size: rem-calc(15);
                         line-height: rem-calc(30);
+                        padding-top: 15px;
                         text-align: center;
     
                         @include md{
                             font-size: rem-calc(20);
                             line-height: rem-calc(30);
                             padding-top: 20px;
+                        }
+
+                        @include lg{
+                            text-align: left;
                         }
                     }
                 }
@@ -124,7 +209,15 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 250px;
-                    margin-top: 50px;
+
+                    @include md{
+                        height: 400px;
+                    }
+
+                    @include lg{
+                        grid-area: aside;
+                        height: 500px;
+                    }
                 }
             }
         }
