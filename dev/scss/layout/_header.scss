@@ -2,25 +2,25 @@
     Header
 ============= */
 
-#header{
+#header {
     background-color: $black;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
 
-    div{
-        #top{
+    div {
+        #top {
             display: none;
             padding: 30px 100px 0 0;
 
-            @include lg{
+            @include lg {
                 display: flex;
                 justify-content: flex-end;
             }
 
             a:link,
-            a:visited{
+            a:visited {
                 color: $brown;
                 font-size: rem-calc(20);
                 font-weight: 700;
@@ -28,11 +28,11 @@
             }
 
             a:hover,
-            a:active{
+            a:active {
                 color: $white;
             }
 
-            input{
+            input {
                 background-color: $white;
                 border-radius: 40px;
                 color: $black;
@@ -41,21 +41,24 @@
                 padding: 0 40px;
                 text-align: center;
             }
-            input:focus, textarea:focus, select:focus{
+
+            input:focus,
+            textarea:focus,
+            select:focus {
                 outline: none;
             }
         }
 
-        #burger-container{
+        #burger-container {
             display: flex;
             justify-content: space-between;
             padding-bottom: 20px;
 
-            @include lg{
+            @include lg {
                 display: none !important;
             }
 
-            i{
+            i {
                 color: $brown;
                 cursor: pointer;
                 font-size: 30px;
@@ -63,70 +66,70 @@
             }
 
             i:link,
-            i:visited{
+            i:visited {
                 color: $brown;
             }
 
             i:hover,
-            i:active{
+            i:active {
                 color: $white;
             }
 
-            h1{
+            h1 {
                 color: $brown;
                 font-size: rem-calc(24);
                 padding: 20px;
             }
         }
 
-        #nav-container{
+        #nav-container {
             display: none;
 
-            @include lg{
+            @include lg {
                 display: flex !important;
                 justify-content: center;
             }
 
-            ul{
+            ul {
                 display: block;
                 padding-bottom: 50px;
 
-                @include lg{
+                @include lg {
                     display: flex;
                     justify-content: center;
                     padding-bottom: 0;
                 }
 
-                li{
+                li {
                     padding: 25px;
 
-                    a{
+                    a {
                         font-size: rem-calc(25);
                         font-weight: 700;
                     }
 
                     a:link,
-                    a:visited{
+                    a:visited {
                         color: $brown;
                     }
 
                     a:hover,
-                    a:active{
+                    a:active {
                         color: $white;
                     }
                 }
 
-                #header-nav1{
+                #header-nav1 {
                     display: none;
 
-                    @include lg{
+                    @include lg {
                         display: flex;
                     }
 
-                    a{
+                    a {
                         font-size: rem-calc(40);
                     }
-                } 
+                }
             }
         }
     }

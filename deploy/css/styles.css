@@ -416,7 +416,9 @@ textarea {
       font-weight: 700;
       padding: 0 40px;
       text-align: center; }
-    #header div #top input:focus, #header div #top textarea:focus, #header div #top select:focus {
+    #header div #top input:focus,
+    #header div #top textarea:focus,
+    #header div #top select:focus {
       outline: none; }
   #header div #burger-container {
     display: flex;

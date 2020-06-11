@@ -1,228 +1,228 @@
 /* =============
     Section 5
 ============= */
-#section-5{
+#section-5 {
     background-color: $brown;
     display: grid;
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ". section-5 .";
 
-    @include lg{
+    @include lg {
         grid-template-columns: none;
     }
 
-    div{
+    div {
         grid-area: section-5;
 
-        @include lg{
+        @include lg {
             padding: 150px 0;
         }
 
-        ul{
-            #part-1{
+        ul {
+            #part-1 {
                 color: $white;
                 padding-top: 50px;
 
-                @include lg{
+                @include lg {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-areas: "section aside";
                     padding: 100px 0;
                 }
 
-                section{
-                    
-                    @include lg{
+                section {
+
+                    @include lg {
                         grid-area: section;
                     }
 
-                    h3{
+                    h3 {
                         font-size: rem-calc(25);
                         line-height: rem-calc(30);
                         padding-bottom: 15px;
                         text-align: center;
-    
-                        @include md{
+
+                        @include md {
                             font-size: rem-calc(45);
                         }
 
-                        @include lg{
+                        @include lg {
                             font-size: rem-calc(53);
                             line-height: rem-calc(64);
                             text-align: left;
                         }
                     }
-    
-                    p{
+
+                    p {
                         font-size: rem-calc(15);
                         line-height: rem-calc(19);
                         padding-bottom: 25px;
                         text-align: justify;
-    
-                        @include md{
+
+                        @include md {
                             font-size: rem-calc(20);
                             line-height: rem-calc(30);
                             padding: 40px 30px;
                         }
 
-                        @include lg{
+                        @include lg {
                             padding: 0;
                         }
                     }
                 }
 
-                aside{
+                aside {
                     background-image: url('../img/section-5/spiderman.jpg');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 250px;
 
-                    @include md{
+                    @include md {
                         height: 400px;
                     }
 
-                    @include lg{
+                    @include lg {
                         grid-area: aside;
                         height: 100%;
                     }
                 }
             }
 
-            #part-2{
+            #part-2 {
                 color: $white;
                 padding-top: 50px;
 
-                @include lg{
+                @include lg {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-areas: "aside section";
                     padding: 100px 0;
                 }
 
-                section{
+                section {
 
-                    @include lg{
+                    @include lg {
                         grid-area: section;
                     }
 
-                    h3{
+                    h3 {
                         font-size: rem-calc(25);
                         line-height: rem-calc(30);
                         padding-bottom: 15px;
                         text-align: center;
-    
-                        @include md{
+
+                        @include md {
                             font-size: rem-calc(45);
                         }
 
-                        @include lg{
+                        @include lg {
                             font-size: rem-calc(53);
                             line-height: rem-calc(64);
                             text-align: left;
                         }
                     }
-    
-                    p{
+
+                    p {
                         font-size: rem-calc(15);
                         line-height: rem-calc(19);
                         padding-bottom: 25px;
                         text-align: justify;
-    
-                        @include md{
+
+                        @include md {
                             font-size: rem-calc(20);
                             line-height: rem-calc(30);
                             padding: 40px 30px;
                         }
 
-                        @include lg{
+                        @include lg {
                             padding: 0;
                         }
                     }
                 }
 
-                aside{
+                aside {
                     background-image: url('../img/section-5/steps.jpg');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 250px;
 
-                    @include md{
+                    @include md {
                         height: 400px;
                     }
 
-                    @include lg{
+                    @include lg {
                         grid-area: aside;
                         height: 100%;
                     }
                 }
             }
 
-            #part-3{
+            #part-3 {
                 color: $white;
                 padding-top: 50px;
 
-                @include lg{
+                @include lg {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-areas: "section aside";
                     padding: 100px 0;
                 }
 
-                section{
+                section {
 
-                    @include lg{
+                    @include lg {
                         grid-area: section;
                     }
 
-                    h3{
+                    h3 {
                         font-size: rem-calc(25);
                         line-height: rem-calc(30);
                         padding-bottom: 20px;
                         text-align: center;
-    
-                        @include md{
+
+                        @include md {
                             font-size: rem-calc(45);
                         }
 
-                        @include lg{
+                        @include lg {
                             font-size: rem-calc(53);
                             line-height: rem-calc(64);
                             text-align: left;
                         }
                     }
-    
-                    p{
+
+                    p {
                         font-size: rem-calc(15);
                         line-height: rem-calc(30);
                         padding-top: 15px;
                         text-align: center;
-    
-                        @include md{
+
+                        @include md {
                             font-size: rem-calc(20);
                             line-height: rem-calc(30);
                             padding-top: 20px;
                         }
 
-                        @include lg{
+                        @include lg {
                             text-align: left;
                         }
                     }
                 }
 
-                aside{
+                aside {
                     background-image: url('../img/section-5/comic.jpg');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 250px;
 
-                    @include md{
+                    @include md {
                         height: 400px;
                     }
 
-                    @include lg{
+                    @include lg {
                         grid-area: aside;
                         height: 500px;
                     }
@@ -230,62 +230,62 @@
             }
         }
 
-        section{
+        section {
             padding: 53px;
             text-align: center;
 
-            @include md{
+            @include md {
                 padding: 80px;
             }
 
-            >a{
+            >a {
                 font-weight: 700;
                 padding: 10px 20px;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(25);
                     padding: 20px 50px;
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(30);
                     padding: 20px 150px;
                 }
             }
 
             >a:link,
-            >a:visited{
+            >a:visited {
                 background-color: $black;
                 color: $white;
             }
 
             >a:hover,
-            >a:active{
+            >a:active {
                 background-color: $white;
                 color: $black;
             }
 
-            >p{
+            >p {
                 color: $white;
                 padding-top: 30px;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(20);
                     padding-top: 40px;
                 }
 
-                span{
-                    a{
+                span {
+                    a {
                         color: $white;
                     }
 
                     a:link,
-                    a:visited{
+                    a:visited {
                         color: $white;
                     }
 
                     a:hover,
-                    a:active{
+                    a:active {
                         color: $black;
                     }
                 }

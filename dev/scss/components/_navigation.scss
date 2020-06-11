@@ -1,22 +1,22 @@
 /* =============
     Navigation
 ============= */
-#nav-container{
-    ul{
+#nav-container {
+    ul {
         height: 100%;
         text-align: center;
 
-        li{
+        li {
             margin-bottom: 20px;
 
             a:link,
-            a:visited{
+            a:visited {
                 color: $brown;
                 text-decoration: none;
             }
 
             a:hover,
-            a:active{
+            a:active {
                 color: $white;
             }
         }

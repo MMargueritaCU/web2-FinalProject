@@ -1,16 +1,16 @@
 /* =============
     Section 1
 ============= */
-#section-1{
+#section-1 {
     background-color: $black;
 
-    @include xl{
+    @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-1 .";
     }
 
-    .grid-content{
+    .grid-content {
         background-image: url('../img/section-1/MARVEL.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -18,61 +18,61 @@
         grid-area: section-1;
         height: 400px;
 
-        @include md{
+        @include md {
             height: 500px;
         }
 
-        @include lg{
+        @include lg {
             height: 650px;
         }
 
-        @include xl{
+        @include xl {
             height: 833px;
         }
 
-        >div{
+        >div {
             padding-top: 300px;
             text-align: center;
 
-            @include md{
+            @include md {
                 padding-top: 375px;
             }
 
-            @include lg{
+            @include lg {
                 padding-top: 500px;
             }
 
-            @include xl{
+            @include xl {
                 padding-top: 700px;
             }
 
-            a{
+            a {
                 font-size: rem-calc(15);
                 font-weight: 700;
                 padding: 20px 40px;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(25);
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(30);
                     padding: 20px 100px;
                 }
 
-                @include xl{
+                @include xl {
                     padding: 20px 150px;
                 }
             }
 
             a:link,
-            a:visited{
+            a:visited {
                 background-color: $black;
                 color: $white;
             }
 
             a:hover,
-            a:active{
+            a:active {
                 background-color: $white;
                 color: $black;
             }

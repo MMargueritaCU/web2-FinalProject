@@ -2,94 +2,94 @@
     Footer
 ============= */
 
-#footer{
+#footer {
     background-color: $black;
 
-    div{
+    div {
         padding: 40px 0;
 
-        @include lg{
+        @include lg {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: "mobile larger"
-                                ". larger2";
+                ". larger2";
             padding-right: 70px;
         }
-        
-        #mobile{
+
+        #mobile {
             display: flex;
             justify-content: space-between;
             padding: 20px 61px;
 
-            @include md{
+            @include md {
                 padding: 20px 300px;
             }
 
-            @include lg{
+            @include lg {
                 grid-area: mobile;
                 padding: 20px 200px;
             }
         }
-        
-        #larger{
+
+        #larger {
             display: none;
 
-            @include md{
+            @include md {
                 display: flex;
                 justify-content: space-between;
                 padding: 20px 220px;
             }
 
-            @include lg{
+            @include lg {
                 grid-area: larger;
                 padding: 20px 100px;
             }
 
-            li{
-                a{
+            li {
+                a {
                     font-size: rem-calc(16);
                     font-weight: 700;
                 }
 
                 a:link,
-                a:visited{
+                a:visited {
                     color: $brown;
                 }
 
                 a:hover,
-                a:active{
+                a:active {
                     color: $white;
                 }
             }
         }
 
-        #larger2{
+        #larger2 {
             display: none;
 
-            @include md{
+            @include md {
                 display: flex;
                 justify-content: space-between;
                 padding: 20px 105px;
             }
 
-            @include lg{
+            @include lg {
                 grid-area: larger2;
                 padding: 20px;
             }
 
-            li{
-                a{
+            li {
+                a {
                     font-size: rem-calc(16);
                     font-weight: 700;
                 }
 
                 a:link,
-                a:visited{
+                a:visited {
                     color: $brown;
                 }
 
                 a:hover,
-                a:active{
+                a:active {
                     color: $white;
                 }
             }

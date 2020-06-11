@@ -1,51 +1,51 @@
 /* =============
     Section 2
 ============= */
-#section-2{
+#section-2 {
     display: grid;
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ". section-2 .";
     padding-bottom: 60px;
 
-    @include lg{
+    @include lg {
         grid-template-columns: none;
     }
-    
-    div{
+
+    div {
         grid-area: section-2;
 
-        @include lg{
+        @include lg {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas: "aside article";
             padding: 50px 0;
         }
 
-        article{
+        article {
 
-            @include lg{
+            @include lg {
                 grid-area: article;
             }
 
-            h2{
+            h2 {
                 font-size: rem-calc(25);
                 line-height: rem-calc(30);
                 padding: 50px 20px;
                 text-align: center;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(45);
                     line-height: rem-calc(55);
                 }
             }
 
-            p{
+            p {
                 font-size: rem-calc(15);
                 line-height: rem-calc(20);
                 padding: 0 10px 70px 10px;
                 text-align: justify;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(20);
                     line-height: rem-calc(30);
                     padding: 0 100px 50px 100px;
@@ -53,18 +53,18 @@
             }
         }
 
-        aside{
+        aside {
             background-image: url('../img/section-2/baby-groot.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             height: 400px;
 
-            @include md{
+            @include md {
                 height: 600px;
             }
 
-            @include lg{
+            @include lg {
                 grid-area: aside;
                 height: 100%;
                 width: 100%;

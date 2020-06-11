@@ -1,22 +1,22 @@
 /* =============
     Section 1 Heading
 ============= */
-#section-1-heading{
+#section-1-heading {
     background-color: $black;
     padding: 32px 10px;
     text-align: center;
 
-    h2{
+    h2 {
         color: $brown;
         font-size: rem-calc(17);
         line-height: rem-calc(20);
 
-        @include md{
+        @include md {
             font-size: rem-calc(26);
             line-height: rem-calc(32);
         }
 
-        @include lg{
+        @include lg {
             font-size: rem-calc(40);
             line-height: rem-calc(49);
         }
